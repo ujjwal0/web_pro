@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title></title>
+
+        <style>
+        body{background-color: rgb(253, 251, 251)}
+        
+        
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+        background-color: #333;
+        
+        }
+        
+        li a { 
+        color: white;
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        }
+        li {
+        
+         float: right;
+         list-style-type: none;
+        }
+        
+        .nav-link:hover{
+            transform: scale(1.1);
+            background-color: black;
+        }
+
+        .items{
+          margin-top: 1.5rem;
+          height: 300px;
+          width: 300px;
+          border: 2px solid black;
+          border-radius: 5px;
+          transition: all 0.3s;
+        }
+
+ 
+        body{
+        margin: 0;
+        font-family: 'Montserrat Alternates', sans-serif;
+         padding: 0;
+         background-image: url("background-img.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+        }
+     
+        .widgetFooter{
+        width: 35%;
+        float: left;
+    
+      }
+
+       ul#footerUsefulLink li:hover a{
+        color: #00CED1;
+        cursor: pointer;
+        }
+
+            div#footerLogo img{
+            width: 50%;
+            margin: 25% 0;
+            border-radius: 50%;
+            }
+
+            div.footerCopy{
+            position: fixed ;
+            bottom: 0;
+
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding-bottom: 5px;
+            border-top: 1px solid #ccc;
+            background: #262626;
+            }
+             #footerUsefulLink{
+            padding-right: 50px;
+                margin-top: 45%;
+                margin-bottom: 0;
+            } 
+            
+            .items:hover{
+                transform: scale(1.05);
+            }
+            .allitems{
+                
+                display:flex;
+                flex-wrap: wrap;
+              
+            }
+
+            .flex-item{
+                width:30%;
+                margin: 5px;
+               
+            }
+
+            .flex-item p{
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .banner{
+    border: 1px solid white;
+    
+}
+#demo {
+  text-align: center;
+   margin-top: 20px;
+}
+.count-down{
+  height: 50px;
+  border: 2px solid white;
+  background-color: white;
+  color: red;
+  width: 300px;
+  margin-left: 620px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  animation: blinker 1.5s linear infinite;
+  border-radius: 50px;
+}
+.sale{
+  height: 50px;
+  border: 2px solid white;
+  background-color: white;
+  color: red;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-bottom: 20px;
+  animation: blinker  1.5s linear infinite;
+  border-radius: 50px;
+}
+.timer{
+  display:flex;
+  flex-wrap: wrap;
+}
+      @keyframes blinker {
+            50% {
+                background-color: red;
+                color: white;
+                border: 2px solid red;
+            }
+        }
+     </style>
+    </head>
+    <body>
+
+
+        <nav class="nav-bar">
+            <ul class="navbar-nav">
+              <div style="display: flex;flex-wrap: wrap;">
+                <img src="electogad.png" height="47px" width="47px" style="margin-left: 5px;"><p style="color: #fff;padding-left: 5px;">ELECTROGADS</p>
+              <div style="float:right;margin-left: 750px;padding-top: 5px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">login/signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">feedback</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">profile</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a> 
+                </li>
+              </div> 
+
+              </div>
+                
+            </ul>
+        </nav>
+        <div class="banner">
+          <img class="mySlides" src="homebanner.webp" height="400px" width="100%">
+          <img class="mySlides" src="home-banner.jpg" height="400px" width="100%">
+          <img class="mySlides" src="independence-day-sale.jpg" height="400px" width="100%">   
+      </div>
+      <div class="timer">
+      <div class="sale"><h1 style="text-align:center; ">Sale is Live</h1></div>
+      <div class="count-down"><h1 id="demo"></h1></div>
+    </div>
+<div style="width:90%;margin-left: 100px; text-align: center;">
+        <h1 style="color: white;margin-left: -90px;">OUR PRODUCTS</h1>
+    <div class="allitems">
+      <div class="flex-item"><a href="laptop.html"><img  class="items" src="laptop1.jpg"></a><p>Laptop</p></div>
+        <div class="flex-item"><a href="Tv.html"><img class="items" src="tv1.jpg"></a>
+        <p>TV</p></div>
+        <div class="flex-item"><a href="phone.html"><img class="items" src="phone1.jpg"></a>
+            <p>Phone</p></div>
+        <div class="flex-item"><a href="#"><img class="items" src="ac.jpg"></a><p>AC</p></div>
+        <div class="flex-item"><a href="#"><img class="items" src="fridge1.webp"></a><p>Fridge</p></div>
+       <div class="flex-item"><a href="#"><img class="items" src="washing1.webp"></a><p>washing Machine</p></div>
+       
+    </div>
+</div>
+        
+    <div>
+        <div class="footer-wrap">
+            <div class="widgetFooter">
+              
+              <ul id="footerUsefulLink">
+                <li title="About US">
+                  <a href="aboutUs.html" style="text-decoration: none;">&nbsp;About us</a>
+                </li>
+                <li title="Our Team">
+                  <a>&nbsp;Our team</a>
+                </li>
+                <li title="Gallery">
+                  <a>&nbsp;Gallery</a>
+                </li>
+                <li title="Contact Us">
+                  <a>&nbsp;Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widgetFooter" id="footerLogo">
+              <img src="electogad.png" alt="Logo">
+            </div>
+            
+          </div>
+          <div class="footerCopy">
+            <div class="inb">
+              <p>Copyrights<sup>&copy;</sup> 2022. Developed by ELECTROGADS</p>
+            </div>
+          </div>
+    </div>
+    
+
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); 
+      }
+      //timer
+var countDownDate = new Date("Aug 11, 2022 3:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;  
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML =  hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+      </script>  
+    </body>
+</html>
